@@ -1,0 +1,133 @@
+extends base.pug
+
+block scripts  
+  script(src="/static/index.js") 
+
+block style 
+  style
+   include ../static/site.css
+
+block header
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="Colleges">Colleges</a>
+                    <a href="Exams">Exams</a>
+                    <a href="Courses">Courses</a>
+                    <a href="News">News</a>
+                </li>
+            </ul>
+            <div class="center" id="humbruger">
+                <div style="color: aqua;"></div>
+            </div>
+        </nav>
+        <section class="background1">
+            <div class="logo">
+                <img src="/static/Logo.jpg" alt="logo">
+                <div class="logo-content1">GoGoneCollege </div>
+                <div class="logo_con1">.com</div>
+            </div>
+            <div class="topbox">
+                <p class="searchtitle">GO AHEAD OVER SEARCH</p>
+                <div class="search_container">
+                    <input class="search_input" type="text" placeholder="SEARCH">
+                </div>
+                <p class="modifier_title">Find Your Niche ?</p>
+            </div>
+        </section>  
+
+block content
+     <section class="top-exams" id="top-exams" style="width: 100vw;">
+        <p class="heading"> Top Exams</p>
+        <hr>
+        <div class="top_exam" id="top_exam">
+            <div class="exam">
+                <a class="examtext" href="#exam1">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/AIIMSlogo.jpg">
+                        <h4 class="exam-detail">AIIMS</h4>
+                        <p class="exam-text">
+                            All India Institute Of Medical Sciences
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="exam">
+                <a class="examtext" href="#exam2">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/JIPMERlogo.jpg">
+                        <h4 class="exam-detail">JIPMER</h4>
+                        <p class="exam-text">
+                            Jawaharlal Institute Of Post Graduate Medical Education and Research
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="exam">
+                <a class="examtext" href="#exam3">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/NEETlogo.jpg">
+                        <h4 class="exam-detail">NEET</h4>
+                        <p class="exam-text">
+                            National Eligibility Cum Entrance Test
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="exam">
+                <a class="examtext" href="#exam4">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/CMCvellorelogo.jpg">
+                        <h4 class="exam-detail">CMC Vellore MBBS</h4>
+                        <p class="exam-text">
+                        |    Christian Medical College Vellore MBBS Entrance Exam
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="exam">
+                <a class="examtext" href="#exam5">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/SRMHCAT.jpg">
+                        <h4 class="exam-detail">SRMHCAT</h4>
+                        <p class="exam-text">
+                          |  SRM University Delhi-NCR Sonepat Haryana Common Aptitude Test
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="exam">
+                <a class="examtext" href="#exam6">
+                    <div class="box_wrapper">
+                        <img width="80vw" height="80vw" src="/static/SAJEElogo.jpg">
+                        <h4 class="exam-detail">SAJEE</h4>
+                        <p class="exam-text">
+                          |  St Andrews Joint Entrance Exam (SAJEE)
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </section>
+
+block footer 
+      <section class="image">
+        <img src="/static/img.jpg" alt="img" class="responsive" id="last_image">
+        </section>
+      <footer>
+        <section class="footer-menu">
+            <ul class="footer-list">
+                <li> <a href="about">About us</a></li>
+                <li> <a href="privacy">Privacy policy</a></li>
+                <li> <a href="contact">Contact us</a></li>
+                <li> <a href="help">Help</a></li>
+            </ul>
+        </section>
+        <section class="footer-bottom">
+            <div class="logo1">
+                <div class="logo-content11">GoGoneCollege </div>
+                <div class="logo_con11">.com</div>
+            </div>
+            <div class="footer-content">Go Gone College © Copyright 2021</div>
+        </section>
+        </footer>

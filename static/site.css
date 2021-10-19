@@ -1,0 +1,376 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       
+        .navbar,
+        .footer-menu {
+            background-color: #202938;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1em;
+            width: 100vw;
+        }
+
+        @media(max-width:359px) {
+
+            .navbar,
+            .footer-menu {
+                font-size: 0.5em;
+            }
+
+            .navbar li a,
+            .footer-menu li a {
+                padding: 0.7em 2em;
+                margin-left: 3em;
+            }
+        }
+
+        .navbar ul,
+        .footer-menu ul {
+            overflow: auto;
+            margin-left: 1vw;
+        }
+
+        .navbar li,
+        .footer-menu li {
+            float: left;
+            list-style: none;
+        }
+
+        .navbar li a,
+        .footer-menu li a {
+            float: left;
+            list-style: none;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar li a:hover,
+        .footer-menu li a:hover {
+            color: rgba(252, 137, 6, 0.938);
+        }
+
+        #humbruger {
+            box-sizing: border-box;
+            /* display: flex; */
+             margin-top: -1.59em; 
+            /* padding: 2px;  */
+            margin-left: 95vw;
+            font-size: 10px; 
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 3em;
+        }
+
+        .center:before,
+        .center:after,
+        .center div {
+            background: #fff;
+            content: "";
+            display: block;
+            height: 3px;
+            border-radius: 3px;
+            margin: 7px 0;
+            transition: 0.5s;
+        }
+
+        .center:hover:before {
+            transform: translateY(12px) rotate(135deg);
+        }
+
+        .center:hover:after {
+            transform: translateY(-12px) rotate(-135deg);
+        }
+
+        .center:hover div {
+            transform: scale(0);
+        }
+
+        .background1 {
+            width: 100vw;
+            height: 35vw;
+            position: relative;
+            animation: animate 70s ease-in-out infinite;
+            background-size: cover;
+            background-blend-mode: screen;
+        }
+
+        @keyframes animate {
+            0% {
+                background-image: url("/static/AIIMSbhubaneswar.jpg");
+
+            }
+
+            5% {
+                background-image: url("/static/AIIMSbhubaneswar.jpg");
+            }
+
+            5.01% {
+                background-image: url(/static/aiims-building.png);
+            }
+
+            25.01% {
+                background-image: url(/static/AIIMSdelhi.jpg);
+            }
+
+            50% {
+                background-image: url(/static/AIIMSbhubaneswar.jpg);
+            }
+
+            50.01% {
+                background-image: url(/static/AIIMSdelhi.jpg);
+            }
+
+            75% {
+                background-image: url(/static/AIIMSbhubaneswar.jpg);
+            }
+
+            75.01% {
+                background-image: url(/static/aiims-building.png);
+            }
+
+            100% {
+                background-image: url(/static/AIIMSbhubaneswar.jpg);
+            }
+        }
+
+        .logo {
+            margin: 0px;
+            margin-left: 2vw;
+            padding: 0px;
+        }
+
+        .logo-content1 {
+            padding-left: 7vw;
+            margin-top: -4.5vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: serif;
+            color: rgb(29, 33, 59);
+
+        }
+
+        .logo_con1 {
+            padding-left: 27vw;
+            margin-top: -3.6vw;
+            font-family: cursive;
+            font-size: 2.5vw;
+            font-weight: 900;
+            font-style: italic;
+            color: rgba(252, 137, 6, 0.938);
+        }
+
+        .logo img {
+            width: 5.45vw;
+            height: 5vw;
+            margin-top: 1vw;
+            padding-left: 1vw;
+        }
+
+        .searchtitle {
+            font-size: 4vw;
+            font-family: cursive;
+            font-weight: bold;
+            margin-top: 3vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search_container {
+            margin-top: 1vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search_input {
+            width: 40vw;
+            height: 2.8vw;
+            font-size: 1.7vw;
+            border-radius: 30vw;
+            background-color: #ffffff;
+            padding-left: 20px;
+            border: 2px solid #575756;
+            transition: all 250ms ease-in-out;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+
+        }
+
+        .search_input:hover,
+        :focus {
+            border: 1.5px solid #4c4c48;
+            border-radius: 0;
+            background-position: 100% center;
+
+        }
+        .modifier_title{
+            position: relative;
+            top: 5vw;
+            font-size:3vw ;
+            text-align: center;
+            font-family: serif;
+            color: ghostwhite;
+        }
+        .college {
+            position: relative;
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+            background-color:ghostwhite;
+        }
+
+        .heading {
+            font-size: 1.6rem;
+            color: rgb(39, 73, 62);
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen{
+            #top_college {
+                display: grid;
+                justify-content: center;
+                grid-gap: 3vw;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr))
+            }
+        }
+
+        .top-clg {
+            background-color: ghostwhite;
+        }
+
+        .clg-box {
+            position: relative;
+            margin: 0;
+            background-color: ghostwhite;
+            /* border: 2px solid rgba(252, 137, 6, 0.938); */
+            border-radius: 20px;
+            padding: 20px 30px;
+            
+        }
+
+        .text-box {
+            font-size: 1.2rem;
+            
+        }
+
+        .clg-nav {
+            font-size: 1rem;
+            list-style:none;
+        }
+        .clg-nav li a{
+            text-decoration: none;
+        }
+
+        .img-box {
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        @media screen{
+            #top_exam {
+                display: grid;
+                justify-content: center;
+                grid-gap: 4vw;
+                grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+            }
+        }
+        .top_exam {
+            background-color: whitesmoke;
+        }
+
+        .exam {
+            position: relative;
+            background-color: whitesmoke;
+            /* border: 2px solid rgba(126, 2, 2, 0.315); */
+            padding: 20px 20px;
+        }
+
+        .exam-detail {
+            font-size: 0.9rem;
+        }
+
+        .examtext {
+            text-decoration: none;
+            color: rgb(26, 26, 59);
+        }
+
+        .exam-text {
+            font-size: 0.7rem;
+            cursor: none;
+        }
+
+        .exam-detail:hover {
+            color: rgb(101, 150, 214);
+        }
+
+        #last_image {
+            /* border:2px solid white; */
+            width: 100vw;
+            height: 15vw;
+        }
+
+        .footer-bottom {
+            display: flex;
+            background-color: #202938;
+            width: 100vw;
+            height: 20;
+        }
+
+        .footer-content {
+            padding: 1px 0.5rem;
+            /* text-align:center; */
+            font-size: 10px;
+            font-weight: bold;
+            color: whitesmoke;
+            position: relative;
+            left: 20%;
+    /* justify-content: center; */
+        }
+
+        .logo-content11 {
+            padding-left: 1vw;
+            margin-top: 0.2vw;
+            font-size: 2vw;
+            font-weight: bolder;
+            font-family: serif;
+            color: whitesmoke;
+
+        }
+
+        .logo_con11 {
+            padding-left: 14.5vw;
+            margin-top: -2.8vw;
+            font-family: cursive;
+            font-size: 2vw;
+            font-weight: 900;
+            font-style: italic;
+            color: rgba(252, 137, 6, 0.938);
+        }
+    form{
+        background-color:#2e3849e5;
+    }
+        input,textarea,button{
+            display: block;
+            padding: 8px;
+            margin: 10px auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 50%;
+            border:5px solid #2e3849e5;
+            border-radius: 10px;
+        }
+        .btn{
+            background-color: rgb(183, 192, 174);
+            color:rgba(0, 12, 7, 0.603);
+            font-weight: bold;
+            font-size: 18px;
+            border:2px solid rgb(225, 231, 230);
+            border-radius: 20px;
+        }
+        #more{
+            background-color: rgb(255, 251, 245);
+        }
